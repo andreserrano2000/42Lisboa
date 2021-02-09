@@ -11,6 +11,7 @@ typedef	struct	s_list
 }	            t_list;
 
 void *ft_memset(void *b, int c, size_t len);
+char	*ft_strchr(const char *str, int c);
 int ft_strlen(char *str);
 
 

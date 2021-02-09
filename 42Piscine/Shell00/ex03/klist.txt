@@ -1,0 +1,5 @@
+Credentials cache: API:D5C61EB7-8C17-4971-8B23-7742F3941AF8
+        Principal: anserran@42LISBOA.COM
+
+  Issued                Expires               Principal
+Oct 21 19:12:07 2020  Oct 22 05:12:07 2020  krbtgt/42LISBOA.COM@42LISBOA.COM

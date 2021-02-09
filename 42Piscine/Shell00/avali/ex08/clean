@@ -1,0 +1,1 @@
+find . typef \( -name "*~" -or -name "#*#" \) -print -delete

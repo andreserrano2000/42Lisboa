@@ -10,16 +10,11 @@ char		*ft_strchr(const char *str, int c)
     {
         if (str[a] == c)
         {
-            a++;
-            while (str[a] != '\0')
-            {
-                res[b] = str[a];
-                a++;
-            }
+                res = str + a;
             return(res);
         }
         
         a++;
     }
-    return("Error!");
+    return 0;
 }

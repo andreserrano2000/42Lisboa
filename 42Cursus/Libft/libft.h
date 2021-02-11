@@ -11,12 +11,14 @@ typedef struct 	s_list
 } 				t_list;
 
 void 	*ft_memset(void *b, int c, size_t len);
+void 	ft_bzero(void *s, size_t n);
 char 	*ft_strchr(const char *str, int c);
 size_t 	ft_strlen(const char *str);
 
 char 	*ft_substr(char const *s, unsigned int start, size_t len);
 char 	*ft_strjoin(char const *s1, char const *s2);
 char 	*ft_strtrim(char const *s1, char const *set);
+
 
 char 	*ft_strncpy(char *dest, const char *src, size_t n);
 #endif

@@ -10,7 +10,7 @@ char		*ft_strchr(const char *str, int c)
     {
         if (str[a] == c)
         {
-                res = str + a;
+            res = str + a;
             return(res);
         }
         

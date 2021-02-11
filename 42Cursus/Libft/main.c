@@ -13,6 +13,21 @@ int main()
     printf("Size = %i\n", size);
     printf("Resultado: %s\n", ft_memset(str, a, size));
 
+    printf("\n*****************\nft_strrchr:\n\n");
+    const char test10[] = "andremiguel";
+    int b1 = 'm';
+    printf("Str = %s\n", test10);
+    printf("C = 'm'\n");
+    printf("Resultado: %s\n", ft_strrchr(test10, b1));
+
+     printf("\n*****************\nft_bzero:\n\n");
+    char test9[] = "this is an example!";
+    void *str1 = test9;
+    int n = 7;
+    printf("Size = %i\n", n);
+    ft_bzero(test9, n);
+    printf("Resultado: %s\n", test9);
+
     printf("\n*****************\nft_strlen:\n\n");
     char test2[] = "andre";
     printf("Str = %s\n", test2);

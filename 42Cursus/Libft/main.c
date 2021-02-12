@@ -20,13 +20,29 @@ int main()
     printf("C = 'm'\n");
     printf("Resultado: %s\n", ft_strrchr(test10, b1));
 
-     printf("\n*****************\nft_bzero:\n\n");
+    printf("\n*****************\nft_bzero:\n\n");
     char test9[] = "this is an example!";
     void *str1 = test9;
     int n = 7;
     printf("Size = %i\n", n);
     ft_bzero(test9, n);
     printf("Resultado: %s\n", test9);
+
+    printf("\n*****************\nft_strnstr:\n\n");
+    const char haystack[] = "andremiguel";
+    const char needle[] = "emi";
+    size_t len = 7;
+    printf("Big = %s\n", haystack);
+    printf("Short = %s\n", needle);
+    printf("Resultado: %s\n", ft_strnstr(haystack, needle, len));
+
+    printf("\n*****************\nft_memcpy:\n\n");
+    const char src[50] = "andremiguel";
+    char dest[50];
+    strcpy(dest, "Andre");
+    printf("Antes de ft_memcpy dest = %s\n", dest);
+    ft_memcpy(dest, src, strlen(src) + 1);
+    printf("Depois de ft_memcpy dest = %s\n", dest);
 
     printf("\n*****************\nft_strlen:\n\n");
     char test2[] = "andre";

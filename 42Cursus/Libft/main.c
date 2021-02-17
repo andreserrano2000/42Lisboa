@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: anserran <anserran@student.42lisboa.com>   +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/02/15 14:28:41 by anserran          #+#    #+#             */
+/*   Updated: 2021/02/15 14:28:41 by anserran         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include "libft.h"
 
@@ -37,12 +49,30 @@ int main()
     printf("Resultado: %s\n", ft_strnstr(haystack, needle, len));
 
     printf("\n*****************\nft_memcpy:\n\n");
-    const char src[50] = "andremiguel";
+    const char src[50] = "newstring";
     char dest[50];
-    strcpy(dest, "Andre");
+    strcpy(dest, "oldstring");
     printf("Antes de ft_memcpy dest = %s\n", dest);
     ft_memcpy(dest, src, strlen(src) + 1);
     printf("Depois de ft_memcpy dest = %s\n", dest);
+
+    printf("\n*****************\nft_memmove:\n\n");
+    char dest1[] = "oldstring";
+    const char src1[] = "newstring";
+    printf("Antes de ft_memmove dest = %s\n", dest1);
+    ft_memmove(dest1, src1, 9);
+    printf("Depois de memmove dest = %s\n", dest1);
+
+    printf("\n*****************\nft_isalpha:\n\n");
+    int int1 = 'd';
+    printf("int c = %i\n", int1);
+    printf("Resultado = %i\n", ft_isalpha(int1));
+
+    printf("\n*****************\nft_atoi:\n\n");
+    char test11[] = " -1234ab567";
+    printf("Str = %s\n", test11);
+    printf("\nExpected: %d\n", atoi(test11));
+    printf("\nResultado: %d\n", ft_atoi(test11));
 
     printf("\n*****************\nft_strlen:\n\n");
     char test2[] = "andre";

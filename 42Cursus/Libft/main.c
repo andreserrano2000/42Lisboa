@@ -99,6 +99,49 @@ int main()
     printf("Resultado = %i\n", ret);
 
 
+    printf("\n*****************\nft_isascii:\n\n");
+    int int3 = '3';
+    printf("int c = %i\n", int3);
+    printf("Resultado = %i\n", ft_isascii(int3));
+
+
+    printf("\n*****************\nft_strlcpy:\n\n");
+    char dest2[] = "andremiguel";
+    const char src2[] = "miguel";
+    size_t len1 = 4;
+    printf("Dest before = %s\n", dest2);
+    printf("Src = %s\n", src2);
+    printf("Resultado: %i\n", ft_strlcpy(dest2, src2, len1));
+    printf("Dest after = %s\n", dest2);
+
+
+    printf("\n*****************\nft_isprint:\n\n");
+    int int4 = 'A';
+    printf("int c = %i\n", int4);
+    printf("Resultado = %i\n", ft_isprint(int4));
+
+
+    printf("\n*****************\nft_strlcat:\n\n");
+    char dest3[20] = "miguel";
+    const char src3[] = "andre";
+    size_t len2 = 4;
+    printf("Dest before = %s\n", dest3);
+    printf("Src = %s\n", src3);
+    printf("Resultado: %i\n", ft_strlcat(dest3, src3, len2));
+
+
+    printf("\n*****************\nft_toupper:\n\n");
+    int int5 = 'b';
+    printf("int c = %c\n", int5);
+    printf("Resultado = %c\n", ft_toupper(int5));
+
+
+    printf("\n*****************\nft_tolower:\n\n");
+    int int6 = 'B';
+    printf("int c = %c\n", int6);
+    printf("Resultado = %c\n", ft_tolower(int6));
+
+
     printf("\n*****************\nft_atoi:\n\n");
     char test11[] = " -1234ab567";
     printf("Str = %s\n", test11);

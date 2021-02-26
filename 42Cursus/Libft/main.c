@@ -142,6 +142,15 @@ int main()
     printf("Resultado = %c\n", ft_tolower(int6));
 
 
+    printf("\n*****************\nft_calloc:\n\n");
+    printf("Resultado = %s\n", ft_calloc(5, sizeof(char)));
+
+
+    printf("\n*****************\nft_strdup:\n\n");
+    char str5[] = "andremiguel";
+    printf("%s\n", ft_strdup(str5));
+
+
     printf("\n*****************\nft_atoi:\n\n");
     char test11[] = " -1234ab567";
     printf("Str = %s\n", test11);
@@ -188,6 +197,13 @@ int main()
     printf("Set = %s\n", test8);
     printf("Resultado: %s\n", ft_strtrim(test7, test8));
     printf("Expected: dreanmiguel\n");
+
+
+    printf("\n*****************\nft_itoa:\n\n");
+    int n1 = 4;
+    printf("Str = %i\n", n1);
+    printf("Resultado: %s\n", ft_itoa(n1));    
+
 
     return 0;
 }

@@ -26,6 +26,8 @@ int		ft_isprint(int c);
 size_t	ft_strlcat(char *dest, const char *src, size_t destsize);
 int 	ft_toupper(int c);
 int 	ft_tolower(int c);
+void	*ft_calloc(size_t count, size_t size);
+char 	*ft_strdup(const char *string);
 char 	*ft_strchr(const char *str, int c);
 size_t 	ft_strlen(const char *str);
 

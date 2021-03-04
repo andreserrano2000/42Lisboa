@@ -1,0 +1,5 @@
+Credentials cache: API:47B8A5FB-E920-4CEB-BD1E-362662300027
+        Principal: psleziak@42LISBOA.COM
+
+  Issued                Expires               Principal
+Oct 21 13:36:00 2020  Oct 21 23:36:00 2020  krbtgt/42LISBOA.COM@42LISBOA.COM
